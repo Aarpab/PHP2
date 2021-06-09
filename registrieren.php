@@ -60,11 +60,15 @@
                                 $sql -> execute();
 
                                 if ($sql -> fetch()) {
-                                    echo "<script>window.alert('Du hast dich erfolgreich angemeldet')</script>";
+                                    mkdir("user/" . $_POST["name"]);
+                                    mkdir("user/" . $_POST["name"] . "/texte");
+                                    mkdir("user/" . $_POST["name"] . "/bilder");
+
+                                    echo "<script>window.alert('Du hast dich erfolgreich registriert')</script>";
                                     echo "<a href='index.php'>Zurück zur Anmeldung</a>";
                                 }
                                 else {
-                                    echo "<script>window.alert('Du hast dich erfolgreich registriert')</script>";
+                                    echo "<script>window.alert('Bei der Registrierung ist ein Fehler aufgetreten')</script>";
                                 }
 
                                 $sql -> close();

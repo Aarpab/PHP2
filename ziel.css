@@ -1,7 +1,21 @@
 #div1 {
-    padding-left: 40%;
+    padding-left: 30%;
 }
 
-#div2 {
-    height: 700px;
+#datei {
+    margin-top: 10px;
+}
+
+#text {
+    width: 200px;
+    height: 30px;
+}
+
+#form {
+    padding-top: 10px;
+}
+
+#link {
+    padding-left: 20%;
+    position: fixed;
 }
