@@ -148,7 +148,8 @@
             }
         ?>
 
-        <a id="link" href="#form">Nach unten</a>
+        <a class="link" href="#form">Nach unten</a><br>
+        <a class="link" href="löschen.php">Account löschen</a>
 
         <div id="div1">
             <div id="div2">
